@@ -1,21 +1,26 @@
 """
-子ども向けショート動画コンテンツ定義
-キャラクター: ももちゃん（女の子）とポポ（プードル犬）
-テーマ: 子どもの「なんで？」を解決する教育コンテンツ
+【改善版】なんでそらはあおいの？ 台本
+対象: 小学生（7歳以上）
+変更点:
+  - オープニング・エンディング追加
+  - ももちゃんのセリフを子どもらしく修正
+  - 1シーンの情報量を削減
+  - 感情リアクション（驚き・笑い）を強化
+  - ポポの説明をステップごとに分割
 """
 
 CHARACTERS = {
     "momo": {
         "name": "ももちゃん",
-        "color": (255, 182, 193),   # ピンク
+        "color": (255, 182, 193),
         "image": "assets/momo.png",
-        "role": "question_asker",   # 質問する役
+        "role": "question_asker",
     },
     "popo": {
         "name": "ポポ",
-        "color": (205, 133, 63),    # 茶色
+        "color": (205, 133, 63),
         "image": "assets/popo.png",
-        "role": "answerer",         # 答える役
+        "role": "answerer",
     },
 }
 
@@ -23,145 +28,77 @@ VIDEO_SCRIPTS = [
     {
         "id": "why_sky_blue",
         "title": "なんでそらはあおいの？",
-        "duration_sec": 30,
+        "duration_sec": 35,
         "scenes": [
+            # ① オープニング
             {
                 "speaker": "momo",
-                "text": "ねえポポ！\nなんでそらって\nあおいの？",
-                "bg_color": (135, 206, 235),  # スカイブルー
-                "duration": 4,
-                "animation": "bounce",
-            },
-            {
-                "speaker": "popo",
-                "text": "いい質問だワン！\nたいようの ひかりには\nいろんな いろが\nまじっているんだよ",
-                "bg_color": (255, 255, 200),  # 薄黄色
-                "duration": 5,
-                "animation": "wave",
-            },
-            {
-                "speaker": "popo",
-                "text": "そらの くうきが\nあおい ひかりだけを\nはねかえすから\nあおく みえるんだ！",
+                "text": "ねえポポ！\nきょうも「なんで？」\nしらべちゃおう！",
                 "bg_color": (135, 206, 235),
-                "duration": 6,
-                "animation": "explain",
-            },
-            {
-                "speaker": "momo",
-                "text": "すごーい！\nゆうやけは\nなんでオレンジなの？",
-                "bg_color": (255, 165, 0),    # オレンジ
-                "duration": 4,
+                "duration": 3,
                 "animation": "bounce",
             },
-            {
-                "speaker": "popo",
-                "text": "ゆうがたは ひかりが\nとおい みちを とおるから\nあかや オレンジが\nのこるんだワン！",
-                "bg_color": (255, 140, 0),
-                "duration": 6,
-                "animation": "wave",
-            },
+            # ② 質問
             {
                 "speaker": "momo",
-                "text": "そっかー！\nそらって\nふしぎだね！",
+                "text": "ポポ〜！\nそらって なんで\nあおいの？",
                 "bg_color": (135, 206, 235),
-                "duration": 5,
-                "animation": "happy",
-            },
-        ],
-    },
-    {
-        "id": "why_rainbow",
-        "title": "なんでにじはでるの？",
-        "duration_sec": 30,
-        "scenes": [
-            {
-                "speaker": "momo",
-                "text": "ポポ！ポポ！\nにじって\nなんでできるの？",
-                "bg_color": (200, 230, 255),
                 "duration": 4,
                 "animation": "bounce",
             },
+            # ③ ポポ反応
             {
                 "speaker": "popo",
-                "text": "あめあがりに\nたいようが でると\nにじが みえるよね！",
-                "bg_color": (200, 255, 200),
-                "duration": 4,
-                "animation": "wave",
-            },
-            {
-                "speaker": "popo",
-                "text": "くうきの なかの\nちいさな みずの つぶが\nひかりを まげて\nいろに わけるんだ！",
+                "text": "おっ！\nいい「なんで？」だワン！\nいっしょに かんがえよう！",
                 "bg_color": (255, 255, 200),
-                "duration": 6,
-                "animation": "explain",
-            },
-            {
-                "speaker": "popo",
-                "text": "あか・オレンジ・き・\nみどり・あお・あい・むらさき\n7つの いろが\nにじなんだワン！",
-                "bg_color": (220, 200, 255),
-                "duration": 6,
-                "animation": "explain",
-            },
-            {
-                "speaker": "momo",
-                "text": "みずが プリズムに\nなるんだね！\nきれーい！",
-                "bg_color": (255, 220, 220),
-                "duration": 5,
-                "animation": "happy",
-            },
-            {
-                "speaker": "popo",
-                "text": "にじは まるいんだよ！\nたかいところから みると\nまるい にじが\nみえるんだワン！",
-                "bg_color": (200, 255, 230),
-                "duration": 5,
-                "animation": "wave",
-            },
-        ],
-    },
-    {
-        "id": "why_seasons",
-        "title": "なんできせつがかわるの？",
-        "duration_sec": 30,
-        "scenes": [
-            {
-                "speaker": "momo",
-                "text": "ねえ！なんで\nなつは あついの？\nふゆは さむいの？",
-                "bg_color": (255, 220, 100),
                 "duration": 4,
-                "animation": "bounce",
+                "animation": "wave",
             },
+            # ④ 説明①：太陽の光
             {
                 "speaker": "popo",
-                "text": "ちきゅうは たいようの\nまわりを ぐるぐる\nまわっているんだ",
-                "bg_color": (200, 230, 255),
+                "text": "たいようの ひかりには\nにじの いろが\nぜんぶ はいってるんだ！",
+                "bg_color": (255, 255, 200),
                 "duration": 5,
                 "animation": "explain",
             },
+            # ⑤ ももリアクション
+            {
+                "speaker": "momo",
+                "text": "えっ！しろい ひかりに\nいろが かくれてるの？\nしらなかった〜！",
+                "bg_color": (255, 240, 200),
+                "duration": 4,
+                "animation": "surprised",
+            },
+            # ⑥ 説明②：空気と青い光
             {
                 "speaker": "popo",
-                "text": "ちきゅうは すこし\nかたむいて いるから\nたいように ちかい\nじきが あるんだよ！",
-                "bg_color": (255, 200, 100),
-                "duration": 6,
+                "text": "そらの くうきが\nあおい ひかりだけを\nはじいて ちらすんだ！",
+                "bg_color": (135, 206, 235),
+                "duration": 5,
                 "animation": "explain",
             },
+            # ⑦ 説明③：夕焼け
             {
                 "speaker": "popo",
-                "text": "たいように ちかいと\nあたたかくて なつ！\nとおいと さむくて\nふゆに なるんだワン",
-                "bg_color": (200, 230, 255),
+                "text": "ゆうやけが オレンジなのは\nひかりが とおくを とおって\nあかい いろだけ のこるから！",
+                "bg_color": (255, 160, 60),
                 "duration": 6,
                 "animation": "wave",
             },
+            # ⑧ ももまとめリアクション
             {
                 "speaker": "momo",
-                "text": "ちきゅうが かたむいてる\nから なんだ！\nしらなかった！",
-                "bg_color": (255, 230, 150),
-                "duration": 5,
+                "text": "そっかー！\nひかりって\nすごいんだね！",
+                "bg_color": (135, 206, 235),
+                "duration": 4,
                 "animation": "happy",
             },
+            # ⑨ エンディング
             {
                 "speaker": "popo",
-                "text": "はるや あきは\nちょうど いい\nきょりだから\nすごしやすいんだよ！",
-                "bg_color": (200, 255, 200),
+                "text": "またいっしょに\n「なんで？」\nさがそうね！だワン♪",
+                "bg_color": (200, 240, 255),
                 "duration": 4,
                 "animation": "wave",
             },
