@@ -1,0 +1,42 @@
+{
+  "name": "naze-nani-channel",
+  "version": "2.2.0",
+  "description": "ももちゃんとポポの「なんでなに？」動画自動生成システム",
+  "scripts": {
+    "start":           "npm run sync && remotion studio src/index.ts",
+    "build":           "npm run sync && remotion render src/index.ts Main out/video.mp4",
+    "voices":          "npx ts-node scripts/generate-voices.ts && npm run sync-script",
+    "sync":            "npm run sync-settings && npm run sync-script",
+    "sync-settings":   "npx ts-node scripts/sync-settings.ts",
+    "sync-script":     "npx ts-node scripts/sync-script.ts",
+    "init":            "npx ts-node scripts/init-project.ts",
+    "editor":          "concurrently \"npm run editor:server\" \"npm run editor:client\"",
+    "editor:client":   "cd editor && npm run dev",
+    "editor:server":   "cd editor && npm run server",
+    "editor:install":  "cd editor && npm install",
+    "thumbnail":       "python3 scripts/generate_thumbnail.py",
+    "b-roll":          "python3 scripts/fetch_b_roll.py",
+    "gif":             "python3 scripts/generate_reaction_gif.py",
+    "batch":           "python3 scripts/batch_generate.py"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "remotion": "^4.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "axios": "^1.6.0",
+    "js-yaml": "^4.1.0",
+    "concurrently": "^8.0.0",
+    "express": "^4.18.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "@types/react": "^18.0.0",
+    "@types/node": "^20.0.0",
+    "@types/js-yaml": "^4.0.0",
+    "@types/express": "^4.17.0",
+    "@types/cors": "^2.8.0"
+  }
+}

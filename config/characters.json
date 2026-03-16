@@ -1,0 +1,56 @@
+{
+  "characters": {
+    "momo": {
+      "name": "ももちゃん",
+      "voicevoxSpeakerId": 3,
+      "color": "#FF6B9D",
+      "position": "left",
+      "catchphrase": "〜だよ！",
+      "description": "ピンクパーカー・いちご髪飾り・元気な女の子",
+      "imagesPath": "public/images/momo",
+      "expressions": {
+        "normal":   { "open": "mouth_open.png",    "close": "mouth_close.png"    },
+        "happy":    { "open": "happy_open.png",    "close": "happy_close.png"    },
+        "surprise": { "open": "surprise_open.png", "close": "surprise_close.png" },
+        "think":    { "open": "thinking_open.png", "close": "thinking_close.png" },
+        "question": { "open": "question_open.png", "close": "question_close.png" }
+      },
+      "fallback": "normal"
+    },
+    "popo": {
+      "name": "ポポ",
+      "voicevoxSpeakerId": 1,
+      "color": "#FF8C00",
+      "position": "right",
+      "catchphrase": "〜だワン！",
+      "description": "チョコ色プードル・さくらんぼバンダナ",
+      "imagesPath": "public/images/popo",
+      "expressions": {
+        "normal":   { "open": "mouth_open.png",    "close": "mouth_close.png"    },
+        "happy":    { "open": "happy_open.png",    "close": "happy_close.png"    },
+        "surprise": { "open": "surprise_open.png", "close": "surprise_close.png" },
+        "think":    { "open": "thinking_open.png", "close": "thinking_close.png" },
+        "question": { "open": "question_open.png", "close": "question_close.png" }
+      },
+      "fallback": "normal"
+    },
+    "toto": {
+      "name": "トト",
+      "voicevoxSpeakerId": 8,
+      "color": "#4FC3F7",
+      "position": "center",
+      "catchphrase": "〜なの？",
+      "description": "水色パーカー・りんごマーク・カーゴショーツ・元気な男の子",
+      "imagesPath": "public/images/toto",
+      "expressions": {
+        "normal":   { "open": "mouth_open.png",    "close": "mouth_close.png"    },
+        "happy":    { "open": "happy_open.png",    "close": "happy_close.png"    },
+        "surprise": { "open": "surprise_open.png", "close": "surprise_close.png" },
+        "think":    { "open": "thinking_open.png", "close": "thinking_close.png" },
+        "question": { "open": "question_open.png", "close": "question_close.png" }
+      },
+      "fallback": "normal"
+    }
+  },
+  "_comment": "emotion（ScriptLine）→ expressions マッピング。画像がない場合は fallback に自動フォールバック"
+}

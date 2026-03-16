@@ -1,0 +1,51 @@
+# video-settings.yaml
+# create-yukkuri-channel 準拠・もも/ポポ/トト向けカスタム値
+# 変更後は npm run sync-settings を実行してください
+
+# フォント設定
+font:
+  family: 'Noto Sans JP'
+  size: 62
+  weight: '900'
+
+# 字幕設定
+subtitle:
+  containerHeight: 216
+  bottomOffset: 0
+  maxWidthPercent: 80
+  maxWidthPixels: 1600
+  outerOutlineWidth: 20
+  outerOutlineColor: '#000000'
+  innerOutlineWidth: 14
+  innerOutlineColor: '#FFFFFF'
+  speakers:
+    momo:   { fillColor: '#FF6B9D', innerOutlineColor: '#FFFFFF', outerOutlineColor: '#000000' }
+    popo:   { fillColor: '#FF8C00', innerOutlineColor: '#FFFFFF', outerOutlineColor: '#000000' }
+    toto:   { fillColor: '#4FC3F7', innerOutlineColor: '#FFFFFF', outerOutlineColor: '#000000' }
+
+# キャラクター設定
+character:
+  height: 400
+  useImages: true
+  imagesBasePath: 'images'   # public/images/{characterId}/
+
+# コンテンツエリア（create-yukkuri-channel 準拠: 余白0）
+content:
+  topPadding:    0
+  sidePadding:   0
+  bottomPadding: 0
+
+# 動画基本設定
+video:
+  width:        1920
+  height:       1080
+  fps:          30
+  playbackRate: 1.0
+
+# カラー設定
+colors:
+  background: '#FFF9E6'   # 温かみのある薄黄（こども向け）
+  text:       '#2D3436'
+  momo:       '#FF6B9D'   # ピンク
+  popo:       '#FF8C00'   # オレンジ
+  toto:       '#4FC3F7'   # 水色

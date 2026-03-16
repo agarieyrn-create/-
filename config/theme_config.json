@@ -1,0 +1,72 @@
+{
+  "_comment": "theme-factory Skill 準拠。video-settings.yaml と連動して自動適用される",
+  "activeTheme": "momo-popo-default",
+  "themes": {
+    "momo-popo-default": {
+      "name": "ももちゃんとポポ デフォルト",
+      "colors": {
+        "background":    "#FFF9E6",
+        "primaryText":   "#2D3436",
+        "momo":          "#FF6B9D",
+        "popo":          "#FF8C00",
+        "toto":          "#4FC3F7",
+        "bubbleBg":      "#FFFFFF",
+        "bubbleBorder":  "#FFB3C6"
+      },
+      "font": {
+        "family":  "Noto Sans JP",
+        "size":    62,
+        "weight":  "900"
+      },
+      "thumbnail": {
+        "bgGradient": ["#FFE4EF", "#FFF9E6"],
+        "titleColor": "#FF6B9D",
+        "accentColor": "#FF8C00"
+      }
+    },
+    "night": {
+      "name": "よるのなぞとき",
+      "colors": {
+        "background":    "#1A1A2E",
+        "primaryText":   "#E0E0E0",
+        "momo":          "#FF9EC4",
+        "popo":          "#FFB347",
+        "toto":          "#87CEEB",
+        "bubbleBg":      "#2D2D44",
+        "bubbleBorder":  "#FF9EC4"
+      },
+      "font": {
+        "family":  "Noto Sans JP",
+        "size":    62,
+        "weight":  "900"
+      },
+      "thumbnail": {
+        "bgGradient": ["#1A1A2E", "#16213E"],
+        "titleColor": "#FF9EC4",
+        "accentColor": "#FFB347"
+      }
+    },
+    "nature": {
+      "name": "しぜんとふしぎ",
+      "colors": {
+        "background":    "#F0FFF4",
+        "primaryText":   "#2D3436",
+        "momo":          "#FF6B9D",
+        "popo":          "#FF8C00",
+        "toto":          "#4FC3F7",
+        "bubbleBg":      "#FFFFFF",
+        "bubbleBorder":  "#90EE90"
+      },
+      "font": {
+        "family":  "Noto Sans JP",
+        "size":    62,
+        "weight":  "900"
+      },
+      "thumbnail": {
+        "bgGradient": ["#E8F5E9", "#F0FFF4"],
+        "titleColor": "#2E7D32",
+        "accentColor": "#FF8C00"
+      }
+    }
+  }
+}

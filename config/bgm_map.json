@@ -1,0 +1,22 @@
+{
+  "_comment": "bgm_type → BGMファイルのマッピング。public/bgm/ 以下に配置",
+  "bgm": {
+    "upbeat":  { "file": "bgm_upbeat.mp3",  "volume": 0.3, "description": "元気・明るい"   },
+    "calm":    { "file": "bgm_calm.mp3",    "volume": 0.25, "description": "落ち着き・解説" },
+    "quiz":    { "file": "bgm_quiz.mp3",    "volume": 0.3, "description": "クイズ・考える" },
+    "ending":  { "file": "bgm_ending.mp3",  "volume": 0.3, "description": "エンディング"   },
+    "none":    { "file": null,              "volume": 0,   "description": "BGMなし"         }
+  },
+  "se": {
+    "correct":  { "file": "se_correct.mp3",  "volume": 0.7 },
+    "wrong":    { "file": "se_wrong.mp3",    "volume": 0.7 },
+    "chime":    { "file": "se_chime.mp3",    "volume": 0.7 },
+    "woosh":    { "file": "se_woosh.mp3",    "volume": 0.7 },
+    "pop":      { "file": "se_pop.mp3",      "volume": 0.6 },
+    "sparkle":  { "file": "se_sparkle.mp3",  "volume": 0.6 }
+  },
+  "default": {
+    "bgm_type": "upbeat",
+    "volume":   0.3
+  }
+}
